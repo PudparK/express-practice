@@ -1,0 +1,11 @@
+{
+  "name": "express-practice",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/PudparK/express-practice.git",
+  "author": "PudparK <p.barron@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
