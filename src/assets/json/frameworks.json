@@ -1,0 +1,19 @@
+{
+  "frameworks": [
+      {
+        "name": "React",
+        "description": "A JAVASCRIPT LIBRARY FOR BUILDING USER INTERFACES",
+        "website": "https://facebook.github.io/react/"
+      },
+      {
+        "name": "Express",
+        "description": "Fast, unopinionated, minimalist web framework for Node.js",
+        "website": "http://expressjs.com/"
+      },
+      {
+        "name": "Angular",
+        "description": "A structural framework for dynamic web apps.",
+        "website": "https://angularjs.org/"
+      }
+ ]
+}

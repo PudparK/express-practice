@@ -7,6 +7,7 @@ const app = express();
 })
 */
 // The static middleware also serves up static files.
+
 app.use(express.static('src/static'));
 app.use(express.static('src/assets/img'));
 app.use(express.static('src/assets/js'));
@@ -28,8 +29,11 @@ app.get('/frameworks/:name', (req, res) => {
 
 app.get('/frameworks', (req, res) => {
   var frameworks = ['React', 'Express', 'Angular'];
+  console.log('frameworks declared.')
   if(req.query.limit >= 0) {
-    res.json(frameworks.slice(0, request.query.limit));
+    res.json(frameworks.slice(0, req.query.limit));
+  } else {
+    res.json(frameworks);
   }
   console.log(frameworks);
 });

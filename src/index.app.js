@@ -7,6 +7,7 @@ const app = express();
 })
 */
 // The static middleware also serves up static files.
+
 app.use(express.static('src/static'));
 app.use(express.static('src/assets/img'));
 app.use(express.static('src/assets/js'));
