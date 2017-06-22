@@ -21,7 +21,7 @@ var frameworks = {
 app.get('/frameworks/:name', (req, res) => {
   var description = frameworks[req.params.name];
   if (!description) {
-    res.status(404).json('No descrition found for ' + request.params.name);
+    res.status(404).json('No description found for ' + request.params.name);
   } else {
     res.json(description);
   }
