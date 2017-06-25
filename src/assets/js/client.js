@@ -21,11 +21,25 @@ $(function(){
     });
   });
 
+  //Del event
+  $('.frameworks-list').on('click', 'a[data-framework]', function(event) {
+    if(!confirm('Are you sure?')) {
+      return false;
+    }
+    var target = $(event.currentTarget);
+
+    $.ajax({
+      type: 'DELETE', url: '/frameworks/' + target.data('framework')
+    }).done(function() {
+      target.parents('li').remove();
+    });
+  });
+
   function appendToList(frameworks) {
     var list = [];
     for(var i in frameworks) {
       framework = frameworks[i];
-      content = '<a href="/frameworks/' +framework+'">'+framework+'</a>';
+      content = '<a href="#" data-framework="' +framework+ '"><img src="del.png"></a>' + '<a href="/frameworks/' +framework+'">' +framework+ '</a>';
       list.push($('<li>', { html: content }));
     }
     $('.frameworks-list').append(list);

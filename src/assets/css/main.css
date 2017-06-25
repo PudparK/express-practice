@@ -1,0 +1,14 @@
+body, html {
+  background: darkgrey;
+}
+
+.frameworks-list {
+  list-style:  none;
+}
+.frameworks-list li {
+  margin-bottom: 5px;
+}
+.frameworks-list img {
+  padding-right: 20px;
+  vertical-align: bottom;
+}
